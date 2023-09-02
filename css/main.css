@@ -1,0 +1,360 @@
+body {
+  background-color: rgba(47, 45, 45, 0.863);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+#window_border{
+  width: 80%;
+  border: 1px solid #1b1919;
+  border-radius: 6px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#foot{
+  position: fixed;
+  width: 80%;
+  margin-top: 0;
+  border: 1px solid #1b1919;
+  background-color: rgb(175, 175, 175);
+  border-radius: 6px;
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hFoot{
+
+  width: 100%;
+  margin-top: 0;
+  background-color: rgb(175, 175, 175);
+  border-radius: 6px;
+  height: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+#menu{
+  height: 50px;
+
+}
+
+h1{
+  text-align: center;
+  color: #e7dede;
+  font-size: 40px;
+  padding: 20px 0 20px 0;
+  margin-top: 50px;
+  text-shadow: 1px 1px rgba(42, 42, 42, 0.65); 
+}
+
+#profil_h1{
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  padding: 10px 0 0px 0;
+  margin-top: 0px;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+
+#menu ol {
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  */
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  font-size:18px;
+  height:2em;
+  line-height:2em;
+  text-align:center;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+  
+}
+#menu ol > li {
+  float:left;
+  width:33.333333%;
+}
+#menu ol > li > button{
+  background-color: rgba(195, 215, 245, 0.65); 
+  border: none;
+  padding: 15px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: #1f1f2a;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+#menu ol > li > button:hover{
+  background-color: rgba(17, 0, 253, 0.246);
+}
+
+#dataLayout ol {
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  */
+  list-style-type:none;
+  padding:0;
+  margin-top: 25px;
+  font-size:18px;
+  height:2em;
+  line-height:2em;
+  text-align:center;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+  
+}
+
+#dataLayout ol > li {
+  float:left;
+  width:20%;
+}
+#dataLayout ol > li > button{
+  background-color: rgba(195, 215, 245, 0.65); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: #1f1f2a;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+#dataLayout ol > li > button:hover{
+  background-color: rgba(17, 0, 253, 0.246);
+}
+
+#content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: rgba(91, 92, 100, 0.698);
+  border-radius: 6px;
+  padding-bottom: 50px;
+}
+
+.profil{
+  border: 1px solid black;
+  font-size: 30px;
+  margin: 50px 4px 4px 4px;
+  padding-left: 80px;
+  border-radius: 16px;
+  background-color: rgba(137, 138, 144, 0.698);
+
+}
+.profil_name{
+  width: 15%;
+  float: left;
+  margin-left: 40px;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+.profil_input{
+  height: 30px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+.profil_confirm{
+  height: 30px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  margin-left: 25px;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+
+#addMeal{
+  width: 95%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  
+}
+
+.MealName{
+  float: left;
+  padding-left: 25px;
+  font-size: 30px;
+  text-shadow: 2px 2px rgba(5, 5, 5, 0.65); 
+  color: rgba(255, 255, 255, 0.842);
+  margin-bottom: 15px;
+  
+}
+
+.MealInput{
+  height: 30px;
+  margin-bottom: 2px;
+  margin-left: 25px;
+  font-size: 20px;
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+
+.MealConfirm{
+  height: 30px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  margin-left: 25px;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65);   
+}
+.ingredientContent{
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 30px;
+  text-shadow: 2px 2px rgba(5, 5, 5, 0.65); 
+  color: rgba(255, 255, 255, 0.842);
+}
+
+.ingredientInput{
+  height: 25px;
+  margin-bottom: 2px;
+  margin-left: 25px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.65); 
+}
+
+.ingredientInput::placeholder {
+  color: rgba(255, 255, 255, 0.822);
+}
+.ingredientInput:focus::placeholder{
+  color: rgba(144, 143, 143, 0.698);
+  text-shadow: 0px 0px;
+}
+
+.ingredientDel{
+  height: 30px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  margin-left: 25px;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65);   
+}
+
+.ingredientName{
+  float: left;
+  padding-left: 25px;
+  font-size: 30px;
+  text-shadow: 2px 2px rgba(5, 5, 5, 0.65); 
+  color: rgba(255, 255, 255, 0.842);
+}
+.ingredientDiv{
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  
+}
+.mealDiv{
+  margin: 10px 10px 0px 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 95%;
+  
+}
+.ingDetail{
+  float: left;
+  padding-left: 25px;
+  font-size: 30px;
+  text-shadow: 2px 2px rgba(5, 5, 5, 0.65); 
+  color: rgba(255, 255, 255, 0.842);
+}
+
+.mealDel{
+  float: right;
+  height: 30px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  background-color: rgba(144, 143, 143, 0.698);
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 25px;
+  text-shadow: 1px 1px rgba(233, 239, 248, 0.65); 
+}
+
+#footProt{
+  height: 30px;
+  width: 250px;
+  margin: 20px 20px 20px 50px;
+  background-image: linear-gradient(to right,rgb(4, 0, 255),rgb(255, 0, 0));
+  float: left;
+
+}
+
+#footFat{
+  height: 30px;
+  width: 250px;
+  margin: 20px 20px 20px 50px;
+  background-image: linear-gradient(to right,rgb(255, 217, 0),rgb(255, 0, 0));
+  float: left;
+
+}
+
+#footCarbo{
+  height: 30px;
+  width: 250px;
+  margin: 20px 20px 20px 50px;
+  background-image: linear-gradient(to right,rgb(74, 0, 144),rgb(255, 0, 0));
+  float: left;
+
+}
+
+#footKcal{
+  height: 30px;
+  width: 250px;
+  margin: 20px 20px 20px 50px;
+  background-image: linear-gradient(to right,rgb(30, 255, 0),rgb(255, 0, 0));
+  float: left;
+
+}
+
+.footIng{
+  height: 30px;
+  float: right;
+  background-color: white;
+
+}
+
+.footIngName{
+  font-size: 25px;
+  width: 250px;
+  margin: 20px 20px 20px 50px;
+}

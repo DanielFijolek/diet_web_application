@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Diet contorling web</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+		
+	</head>
+	<body>
+    <h1>Diet controling web</h1>
+    <div id="window_border">
+
+      <div id="menu">
+        <ol>
+          <li><button onclick="goToMain()">main</button></li>
+          <li><button onclick="goToProfil()">profil</button></li>
+          <li><button onclick="logOut()">log out</button></li>
+        </ol>
+      </div>
+
+      <div id="content">
+
+        <div id="dataLayout">
+          <ol>
+            <li><button id="dateButton1" onclick="goToDate(-2)"></button></li>
+            <li><button id="dateButton2" onclick="goToDate(-1)"></button></li>
+            <li><button id="dateButton3" onclick="goToDate(0)"></button></li>
+            <li><button id="dateButton4" onclick="goToDate(1)"></button></li>
+            <li><button id="dateButton5" onclick="goToDate(2)"></button></li>
+          </ol>
+        </div>
+
+        <div id="addMeal">
+
+          <div id="mealName">
+
+            <div class = "MealName">Meal name:</div>
+          
+              <input class="MealInput" id="meal" type="text" value="">
+              <input class="MealConfirm" id="newIngrident" value="New ingredient" type="submit" onclick="newIngredient()">
+              <input class="MealConfirm" id="mealConfirm" value="Confirm" type="submit" onclick="confirmMeal()">
+    
+            </div>
+            <div class="ingredientContent">
+
+              <div class="ingredientDiv" id="ingredientDiv1">
+
+                <div class="ingredientName">Ingredient:</div>
+                <input class="ingredientInput" id="ingredient1" type="text" value="" placeholder="name">
+                <input class="ingredientInput" id="ingredientProtein1" type="text" value="" placeholder="Protein">
+                <input class="ingredientInput" id="ingredientFat1" type="text" value="" placeholder="Fat">
+                <input class="ingredientInput" id="ingredientCarbohydrates1" type="text" value="" placeholder="Carbohydrates">
+                <input class="ingredientInput" id="ingredientKcal1" type="text" value="" placeholder="Kcal">
+                <input class="ingredientDel" value="Delete ingredient" type="submit" onclick="delIngredient()">
+              
+              </div id="ingredientDiv1">
+
+            </div>
+
+          </div>
+
+        
+      </div>
+
+      
+    
+
+    </div>
+
+    <div id="foot">
+
+      
+      <div class="hFoot">
+
+        <div class="footIngName" id="footProtName"></div>
+        <div class="footIngName" id="footFatName"></div>
+        <div class="footIngName" id="footCarboName"></div>
+        <div class="footIngName" id="footKcalName"></div>
+
+
+      </div>
+
+      <div class="hFoot">
+
+        <div id="footProt">
+
+          <div class="footIng" id="footProtBlank" style="width: 0%;"></div>
+
+        </div>
+
+        <div id="footFat">
+
+          <div class="footIng" id="footFatBlank" style="width: 0%;"></div>
+
+        </div>
+
+        
+        <div id="footCarbo">
+
+          <div class="footIng" id="footCarboBlank" style="width: 0%;"></div>
+
+        </div>
+
+        
+        <div id="footKcal">
+
+          <div class="footIng" id="footKcalBlank" style="width: 0%;"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+  <script src="../js_script/main.js"></script>
+</html>

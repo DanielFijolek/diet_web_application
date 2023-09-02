@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Diet contorling web</title>
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script src="../js_script/profil.js"></script>
+	</head>
+	<body>
+    <h1>Diet controling web</h1>
+    <div id="window_border">
+
+      <div id="menu">
+        <ol>
+          <li><button onclick="goToMain()">main</button></li>
+          <li><button onclick="goToProfil()">profil</button></li>
+          <li><button onclick="logOut()">log out</button></li>
+        </ol>
+      </div>
+
+      <div id="content">
+        <h1 id="profil_h1">Your data</h1>
+        <div class="profil">
+        
+          <div class = "profil_name">Nick:</div>
+          <input class="profil_input" id="nick" type="text" value="">
+          <input class="profil_confirm" id="nick_input" value="Confirm" type="submit" onclick="updateProfilNick('nick')">
+        
+        </div>
+        <div class="profil">
+
+          <div class = "profil_name">Height:</div>
+          <input class="profil_input" id="height" type="text" value="">
+          <input class="profil_confirm" id="height_input" value="Confirm" type="submit" onclick="updateProfilHeight('height')">
+        
+        </div>
+        <div class="profil">
+
+          <div class = "profil_name">Weight:</div>
+          <input class="profil_input" id="weight" type="text" value="">
+          <input class="profil_confirm" id="weight_input" value="Confirm" type="submit" onclick="updateProfilWeight('weight')">
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
